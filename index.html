@@ -1,3 +1,4 @@
+
 <h3>Escute a música para ver o seu presente :)<h3>
 
     
@@ -166,6 +167,27 @@
             text-align: center;
             font-weight: bold;
         }
+        @media (max-width: 768px) {
+            .card, .photo-icon, .flower-icon, .heart-icon {
+                font-size: 60px;
+            }
+            .message, .heart-message {
+                max-width: 90%;
+                padding: 15px;
+            }
+            .gallery img, .flower-gallery img {
+                max-width: 80%;
+            }
+            p {
+                font-size: 16px;
+            }
+            h2 {
+                font-size: 18px;
+            }
+            h3 {
+                font-size: 16px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -253,7 +275,7 @@ Franck e Kamilla.</p>
                 gallery.classList.remove('show');
                 photoIcon.classList.remove('open');
                 flash.classList.remove('active');
-                return; 
+                return;
             }
             setTimeout(() => {
                 flash.classList.remove('active');
